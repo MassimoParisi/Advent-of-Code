@@ -14,8 +14,9 @@ with open("input.txt") as f:
         spotID = row * 8 + col
         spots.append(spotID)
 
-spots.sort()
-for i in range(len(spots)-1):
-    if spots[i]+1 != spots[i+1]:
-        print(spots[i+1]-1)
+for x in range(min(spots), max(spots)+1):
+    if x not in spots and \
+       x-1 in spots and \
+       x+1 in spots:
+        print(f"Result is: {x}")
 

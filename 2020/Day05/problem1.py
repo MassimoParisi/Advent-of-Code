@@ -14,4 +14,4 @@ with open("input.txt") as f:
         spotID = row * 8 + col
         maxID = max(maxID, spotID)      
 
-print(maxID)
+print(f"Result is: {maxID}")
