@@ -1,8 +1,9 @@
 ans = []
 count = 0
 
+
 def everyone():
-    groupTot = 0
+    group_tot = 0
     for char in ans[0]:
         good = True
         for el in ans:
@@ -10,8 +11,9 @@ def everyone():
                 good = False
                 break
         if good:
-            groupTot += 1
-    return groupTot
+            group_tot += 1
+    return group_tot
+
 
 with open("input.txt") as f:
     for line in f.readlines():

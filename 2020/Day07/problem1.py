@@ -1,10 +1,10 @@
 import re
 
-bagDict = dict()
+bag_dict = dict()
 with open("input.txt") as f:
     for line in f.readlines():
         contain = line.split(" bags contain ")
-        bagType = contain[0]
+        bag_type = contain[0]
         contained = re.findall(r"\d+ [a-z ]+ bag", contain[1])
         for i, c in enumerate(contained):
             tmp = re.match(r"(\d+) ([a-z ]+) bag", c)
@@ -12,27 +12,27 @@ with open("input.txt") as f:
             name = tmp.group(2)
             contained[i] = (name, qty)
 
-        bagDict.update({bagType: contained})
-validColors = set()
+        bag_dict.update({bag_type: contained})
+valid_colors = set()
 
 
-def check(bagType: str) -> bool:
+def check(bag_type: str) -> bool:
     # base case: the bag contains directly a shiny gold
-    for el in bagDict.get(bagType):
+    for el in bag_dict.get(bag_type):
         if el[0] == "shiny gold":
-            validColors.add(bagType)
+            valid_colors.add(bag_type)
             return True
 
     # general case: search inside all the directly contained bags
-    for el in bagDict.get(bagType):
+    for el in bag_dict.get(bag_type):
         if check(el[0]):
-            validColors.add(bagType)
+            valid_colors.add(bag_type)
             return True
     return False
 
 
-for key in bagDict.keys():
+for key in bag_dict.keys():
     check(key)
 
-result = len(validColors)
+result = len(valid_colors)
 print(f"Result is: {result}")

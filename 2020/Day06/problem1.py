@@ -11,7 +11,4 @@ with open("input.txt") as f:
             ans.clear()
 count += len(ans)
 
-
-
 print(count)
-
