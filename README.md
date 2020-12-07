@@ -1,2 +1,2 @@
 # AoC
-My AoC solutions
+My AoC solutions.
