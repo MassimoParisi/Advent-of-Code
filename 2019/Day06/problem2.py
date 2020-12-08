@@ -7,6 +7,7 @@ with open("input.txt") as f:
         orb = link[1]
         links.update({orb: mass})
 
+
 def chain(orb: str) -> list:
     chain = []
     mass = links[orb]
@@ -15,14 +16,16 @@ def chain(orb: str) -> list:
         mass = links[mass]
     chain.append("COM")
     return chain
-    
+
+
 def dist(you: list, santa: list):
-    for i,x in enumerate(you):
-        for j,y in enumerate(santa):
+    for i, x in enumerate(you):
+        for j, y in enumerate(santa):
             if x == y:
-                result = i + j 
+                result = i + j
                 print(f"Result is: {result}")
                 return
+
 
 you = chain("YOU")
 santa = chain("SAN")
