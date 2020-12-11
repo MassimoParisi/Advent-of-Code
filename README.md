@@ -2,8 +2,7 @@
 My AoC solutions, written in Python.
 <center>
 
-![AoCimg](https://www.element14.com/community/servlet/JiveServlet/showImage/38-36616-958189/advent-of-code.jpeg)
-
+![image](src/AoC.jpg)
 
 <table>
   <tr>
