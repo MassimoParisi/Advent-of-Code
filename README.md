@@ -2,7 +2,7 @@
 My AoC solutions, written in Python.
 
   ![image](src/AoC.jpg)
-
+<center>
   <table style="display: inline-block;">
     <tr>
       <th>Year</th>
@@ -128,12 +128,7 @@ My AoC solutions, written in Python.
   </tr>
   </table>
   </td>
-  </table>
-  <table style="display: inline-block;">
-    <tr>
-      <th>Year</th>
-      <th>Days</th>
-    </tr>
+  <tr>
     <th>2018</th>
     <td>
       <table>
@@ -254,3 +249,4 @@ My AoC solutions, written in Python.
   </table>
   </td>
   </table>
+</center>
