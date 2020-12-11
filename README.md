@@ -129,7 +129,6 @@ My AoC solutions, written in Python.
   </table>
   </td>
   </table>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <table style="display: inline-block;">
     <tr>
       <th>Year</th>
