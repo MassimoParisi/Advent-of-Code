@@ -13,7 +13,7 @@ My AoC solutions, written in Python.
     <th>2015</th>
     <td>
     <table>
-    <td style="color:yellow">1</td>
+    <td> <a href="2015/Day01">1</a></td>
     <td style="color:yellow">2</td>
     <td style="color:yellow">3</td>
     <td style="color:yellow">4</td>
