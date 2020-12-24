@@ -243,7 +243,7 @@ My AoC solutions, written in Python.
     <td>21</td>
     <td>22</td>
     <td> <a href="2020/Day23">23</a> </td>
-    <td>24</td>
+    <td> <a href="2020/Day24">24</a> </td>
     <td>25</td>
   </tr>
   </table>
