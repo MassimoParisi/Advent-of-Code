@@ -11,4 +11,6 @@ inp = deque([inp.count(x) for x in range(9)])
 for _ in range(256):
     new_fish = inp[0]
     inp.rotate(-1)
-    inp[6]
+    inp[6] += new_fish
+
+print(sum(inp))
