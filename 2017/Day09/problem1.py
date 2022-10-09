@@ -1,6 +1,3 @@
-from gc import garbage
-
-
 with open("input.txt") as f:
     inp = f.read().strip()
 
